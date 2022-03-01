@@ -36,16 +36,19 @@ else
 		if [[ $swapSize == 2 ]]
 		then
 			dd if=/dev/zero of=$swapFileDIR/swapfile_2048MB_$time bs=128M count=16 #128*16=2048
+			fileNameWithDIR=$swapFileDIR/swapfile_2048MB_$time
 		fi
 		#######################
 		if [[ $swapSize == 3 ]]
 		then
 			dd if=/dev/zero of=$swapFileDIR/swapfile_3072MB_$time bs=128M count=24 #128*24=3072
+			fileNameWithDIR=$swapFileDIR/swapfile_3072MB_$time
 		fi
 		#######################
 		if [[ $swapSize == 4 ]]
 		then
 			dd if=/dev/zero of=$swapFileDIR/swapfile_4096MB_$time bs=128M count=32 #128*32=4096
+			fileNameWithDIR=$swapFileDIR/swapfile_4096MB_$time
 		fi
 		#######################
 		if [[ $swapSize == 5 ]]
@@ -57,16 +60,19 @@ else
 		if [[ $swapSize == 8 ]]
 		then
 			dd if=/dev/zero of=$swapFileDIR/swapfile_8192MB_$time bs=128M count=64 #128*64=8192
+			fileNameWithDIR=$swapFileDIR/swapfile_8192MB_$time
 		fi
 		#######################
 		if [[ $swapSize == 16 ]]
 		then
 			dd if=/dev/zero of=$swapFileDIR/swapfile_16384MB_$time bs=128M count=128 #128*128=16384
+			fileNameWithDIR=$swapFileDIR/swapfile_16384MB_$time
 		fi
 		#######################
 		if [[ $swapSize == 32 ]]
 		then
 			dd if=/dev/zero of=$swapFileDIR/swapfile_32768MB_$time bs=128M count=256 #128*256=32768
+			fileNameWithDIR=$swapFileDIR/swapfile_32768MB_$time
 		fi
 		#######################
 		#######################
